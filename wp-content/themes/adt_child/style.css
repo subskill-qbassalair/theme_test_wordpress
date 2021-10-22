@@ -1,0 +1,10 @@
+/*
+Theme Name: adt_child
+Description: Theme enfant de adt
+Author: Quentin
+Author URI: http://localhost:8888/wordpress/
+Template: adt
+Version: 0.1.0
+*/
+
+@import url("./assets/css/dist/style.min.css");

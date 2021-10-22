@@ -1,0 +1,16 @@
+// ROBOTO
+@include font-face(RobotoBlack, '#{$path-fonts}/roboto/Roboto-Black', null, null, ttf woff woff2 eot svg);
+@include font-face(RobotoBold, '#{$path-fonts}/roboto/Roboto-Bold', null, null, ttf woff woff2 eot svg);
+@include font-face(RobotoMedium, '#{$path-fonts}/roboto/Roboto-Medium', null, null, ttf woff woff2 eot svg);
+@include font-face(RobotoRegular, '#{$path-fonts}/roboto/Roboto-Regular', null, null, ttf woff woff2 eot svg);
+@include font-face(RobotoLight, '#{$path-fonts}/roboto/Roboto-Light', null, null, ttf woff woff2 eot svg);
+@include font-face(RobotoThin, '#{$path-fonts}/roboto/Roboto-Thin', null, null, ttf woff woff2 eot svg);
+@include font-face(icomoon, '#{$path-fonts}/icomoon/icomoon', null, null, ttf woff eot svg);
+
+$roboto-black : 'RobotoBlack', 'Arial', 'sans-serif';
+$roboto-bold : 'RobotoBold', 'Arial', 'sans-serif';
+$roboto-regular: 'RobotoRegular', 'Arial', 'sans-serif';
+$roboto-medium: 'RobotoMedium', 'Arial', 'sans-serif';
+$roboto-light: 'RobotoLight', 'Arial', 'sans-serif';
+$roboto-thin: 'RobotoThin', 'Arial', 'sans-serif';
+$icomoon: 'icomoon', 'Arial', 'sans-serif';

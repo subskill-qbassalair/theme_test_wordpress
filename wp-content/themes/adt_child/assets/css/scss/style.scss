@@ -1,0 +1,449 @@
+@import "inc/core";
+@import "inc/project";
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 9999;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  ul {
+    display: flex;
+  }
+  li.menu-item {
+    a {
+      padding: 30px 30px 10px 0;
+      color: #bebebe;
+
+      &:hover {
+        color: white;
+      }
+
+      &.is-white {
+        color: black;
+      }
+    }
+  }
+  // a:visited {
+  //   color: #bebebe;
+  //   &:hover {
+  //     color: white;
+  //   }
+  // }
+  // a.is-white:visited {
+  //   color: black;
+  //   &:hover {
+  //     color: rgb(31, 31, 31);
+  //   }
+  // }
+}
+
+// .black{
+//   background-color: black;
+// }
+
+// .black a {
+//   color: rgb(190, 190, 190);
+// }
+
+main {
+  margin-top: 60px;
+}
+
+footer {
+  margin-top: 150px;
+}
+
+#footer {
+  li {
+    a {
+      //@extend .nav-link;
+      //@extend .px-2;
+      //@extend .text-muted;
+    }
+  }
+}
+
+#searchform {
+  margin: 120px 0 0;
+  text-align: center;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding-top: 75px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 140px 12.5% 120px;
+  color: white;
+  font-weight: 700;
+  text-align: left;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.about-text {
+  text-align: center;
+  padding: 120px 200px;
+  background: bisque;
+}
+
+.welcome-message {
+  padding: 50px 100px;
+  margin-top: -60px;
+  background: black;
+  color: white;
+  text-align: left;
+}
+
+textarea {
+  width: auto;
+}
+
+.container-legal {
+  h1 {
+    padding-bottom: 90px;
+  }
+  p,
+  h3 {
+    padding: 10px 150px 10px;
+  }
+}
+
+.container-posts {
+  margin-top: 75px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  img {
+    border-radius: 30px;
+  }
+  .post-cust {
+    margin: 160px 0px 0px;
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    &:hover {
+      box-shadow: 4px -4px 20px -6px #4b5858;
+    }
+    p {
+      max-width: 280px;
+    }
+    a {
+      color: black;
+    }
+
+    .post-meta {
+      font-size: 12px;
+      font-style: italic;
+      padding: 5px 15px;
+      border-radius: 10px;
+      color: black(255, 255, 255);
+      background: #83baaa;
+      width: 40%;
+      margin-top: 10px;
+    }
+    .read-more {
+      text-align: center;
+      padding: 5px 0 5px;
+      color: black;
+      background-color: white;
+      border-radius: 10px 10px 0 0;
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
+
+.background-posts {
+  width: 100%;
+  background: white;
+}
+
+.index-sub-title {
+  padding: 270px 20px 250px;
+  margin: 0;
+  text-align: center;
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.container-card-membre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 16px 0px rbga(0, 0, 0, 0.5);
+
+  .card-membre {
+    padding: 30px;
+    width: 33%;
+    a {
+      color: black;
+      text-decoration: underline;
+      &:hover {
+        color: rgb(33, 61, 68);
+      }
+    }
+  }
+}
+
+.infos-membre {
+  margin: 0 auto 150px;
+  width: 24%;
+  box-shadow: 4px -4px 16px -6px #4b5858;
+  background: #f9ead7;
+  li {
+    padding: 20px 15px 0;
+  }
+}
+
+.entry-content {
+  margin: auto;
+  font-size: 20px;
+  width: 50%;
+}
+
+.post-thumbnail {
+  width: 25%;
+  margin: auto;
+  padding: 30px;
+}
+
+.entry-meta,
+.entry-footer,
+.comments-title {
+  display: none;
+}
+
+.form-submit {
+  margin-left: 10%;
+}
+
+.comment-form-comment {
+  width: 80%;
+  margin: auto;
+}
+
+.icon-linkedin:after {
+  font-family: $icomoon;
+  content: "\e902";
+  color: black;
+}
+
+.icon-twitter:before {
+  font-family: $icomoon;
+  content: "\e900";
+  color: black;
+}
+
+.social {
+  display: inline-block;
+  margin: 5px 10px 20px;
+}
+
+.container-teams-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  a {
+    color: white;
+    // &:hover {
+    // }
+  }
+  .card-team-link {
+    background: black;
+    margin: -30px 30px 0;
+    position: relative;
+    box-shadow: 1px 1px 5px black;
+    &:hover {
+      top: -30px;
+      box-shadow: 3px 7px 20px black;
+    }
+    .team-number {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 12%;
+      font-size: 20px;
+    }
+    img {
+      clip-path: polygon(0 0, 100% 0, 100% 22%, 49% 40%, 49% 40%, 0 22%);
+      min-width: 235px;
+    }
+  }
+}
+.membre-name {
+  width: 24%;
+  margin: 50px 0 30px;
+  border-radius: 0 60px 60px 0px;
+  padding: 20px 50px 25px;
+}
+
+.main-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.margin-footer {
+  margin-bottom: 285px;
+}
+
+.posts-img {
+  position: absolute;
+  top: 60px;
+  z-index: -1;
+}
+
+.container-title {
+  width: 100%;
+  background: black;
+  height: 300px;
+  margin-top: -60px;
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.title-about {
+  padding: 85px 0 150px 7.5%;
+  background: black;
+  margin: 0;
+}
+
+.sub-title-about {
+  text-align: center;
+  padding: 50px;
+  font-size: 80px;
+}
+
+.container-text-about p:first-child,
+.container-text-about p:nth-child(2),
+.about-text-left,
+.about-text-right {
+  width: 30%;
+  font-size: 24px;
+  padding: 50px;
+}
+
+.container-text-about p {
+  margin-left: 20%;
+}
+
+.container-text-about p:nth-child(2),
+.about-text-right {
+  margin-left: 50%;
+}
+
+.container-text-about {
+  .about-text-left {
+    width: 100%;
+  }
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20vh 30vw;
+  color: white;
+  background: black;
+}
+
+.container-form {
+  padding: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(118, 110, 255, 1) 0%,
+    rgba(226, 229, 255, 1) 100%
+  );
+  .question {
+    color: white;
+    font-size: 46px;
+    padding: 75px 0;
+  }
+
+  .wpcf7 {
+    background-color: #b8b6ff;
+    display: inline-block;
+    padding: 50px 35px;
+    border-radius: 20px;
+    input:focus {
+      border: 4px solid white;
+    }
+    .wpcf7-form-control {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+.container--test {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.logo-test img {
+  width: 30%;
+  margin: 50px 0px 70px 400px;
+}
+
+.title-404 {
+  color: white;
+  margin: -60px 12.5% 100px;
+  font-size: 80px;
+  cursor: default;
+  span:hover {
+    color: black;
+  }
+}
+
+.sub-title-404 {
+  cursor: default;
+  font-size: 50px;
+  margin: -60px 12.5% 100px;
+  padding: 0;
+}
+
+.container-404 {
+  width: 100%;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.button-404 {
+  text-align: center;
+  margin: auto;
+  display: block;
+  color: white !important;
+  font-size: 30px;
+  text-decoration: underline;
+}

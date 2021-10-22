@@ -1,0 +1,58 @@
+$enable-responsive-font-sizes: true;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+html{
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+strong, b {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+input {
+  box-sizing: content-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
